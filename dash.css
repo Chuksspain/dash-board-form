@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+}
+
+section {
+    background-color: #008181;
+    width: 500px;
+    display: block;
+    margin: 200px auto;
+    height: 500px;
+    border-radius: 5px;
+}
+
+#name {
+    border-radius: 5px;
+    border-width: none;
+    background-color: white;
+    position: relative;
+    font-size: 10px;
+    display: block;
+    margin-left: 20px;
+    width: 224px;
+    height: 23px;
+    border-style: none;
+}
+
+#email {
+    border-radius: 5px;
+    border-width: none;
+    background-color: white;
+    position: relative;
+    font-size: 10px;
+    margin-left: 20px;
+    width: 104px;
+    height: 23px;
+    margin-right: 10px;
+    border-style: none;
+}
+
+#number {
+    border-radius: 5px;
+    border-width: none;
+    background-color: white;
+    position: relative;
+    font-size: 10px;
+    width: 107px;
+    height: 23px;
+    border-style: none;
+}
+
+#request {
+    border-radius: 5px;
+    border-width: none;
+    background-color: white;
+    position: relative;
+    font-size: 10px;
+    width: 225px;
+    height: 105px;
+    margin-left: 20px;
+    border-style: none;
+}
+
+div {
+    display: inline-block;
+}
+
+#phone {
+    display: inline-block;
+}
+
+.name {
+    color: white;
+    padding-left: 21px;
+    font-size: 11px;
+}
+
+.phone {
+    color: white;
+    font-size: 11px;
+}
+
+.email {
+    color: white;
+    padding-left: 21px;
+    font-size: 11px;
+}
+
+.request {
+    color: white;
+    padding-left: 21px;
+    font-size: 11px;
+    margin-bottom: 7px;
+}
+
+form {
+    padding-top: 90px;
+}
+
+form>* {
+    margin-bottom: 15px;
+}
+
+img {
+    margin-left: 50px;
+    height: 100px;
+    position: relative;
+    display: inline-block;
+    float: right;
