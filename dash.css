@@ -1,108 +1,68 @@
-* {
-    box-sizing: border-box;
-}
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
 
 section {
     background-color: #008181;
-    width: 500px;
-    display: block;
-    margin: 200px auto;
-    height: 500px;
-    border-radius: 5px;
+    border-radius: 50px;
 }
 
-#name {
-    border-radius: 5px;
-    border-width: none;
-    background-color: white;
-    position: relative;
-    font-size: 10px;
-    display: block;
-    margin-left: 20px;
-    width: 224px;
-    height: 23px;
-    border-style: none;
+.flex {
+    display: flex;
 }
 
-#email {
-    border-radius: 5px;
-    border-width: none;
-    background-color: white;
-    position: relative;
-    font-size: 10px;
-    margin-left: 20px;
-    width: 104px;
-    height: 23px;
-    margin-right: 10px;
-    border-style: none;
-}
-
-#number {
-    border-radius: 5px;
-    border-width: none;
-    background-color: white;
-    position: relative;
-    font-size: 10px;
-    width: 107px;
-    height: 23px;
-    border-style: none;
-}
-
-#request {
-    border-radius: 5px;
-    border-width: none;
-    background-color: white;
-    position: relative;
-    font-size: 10px;
-    width: 225px;
-    height: 105px;
-    margin-left: 20px;
-    border-style: none;
-}
-
-div {
-    display: inline-block;
-}
-
-#phone {
-    display: inline-block;
-}
-
-.name {
-    color: white;
-    padding-left: 21px;
-    font-size: 11px;
-}
-
-.phone {
-    color: white;
-    font-size: 11px;
-}
-
-.email {
-    color: white;
-    padding-left: 21px;
-    font-size: 11px;
-}
-
-.request {
-    color: white;
-    padding-left: 21px;
-    font-size: 11px;
-    margin-bottom: 7px;
+.flex-item {
+    flex: 1;
 }
 
 form {
-    padding-top: 90px;
+    margin-top: 166px;
+    padding: 35px;
+    flex-direction: column;
+    gap: 20px;
 }
 
-form>* {
-    margin-bottom: 15px;
+form .form-group {
+    display: flex;
+    flex-direction: column;
 }
 
-img {
-    margin-left: 50px;
-    height: 150px;
-    position: relative;
-    display: inline-block;
-    float: right;
+.form-group-wrap {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.form-group-wrap .form-group {
+    flex: 1;
+}
+
+.form-group label {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22.9075px;
+    line-height: 23px;
+    color: #FFFFFF;
+}
+
+.form-group textarea,
+.form-group input {
+    background: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    border-radius: 10px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16.0353px;
+    line-height: 23px;
+    padding: 5px;
+}
+
+.form-group textarea::placeholder,
+.form-group input::placeholder {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16.0353px;
+    line-height: 23px;
+    color: #9E9E9E;
+}

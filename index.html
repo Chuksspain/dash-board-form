@@ -6,31 +6,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dash Board Form</title>
-    <link rel="stylesheet" href="utilities.css">
     <link rel="stylesheet" href="dash.css">
 </head>
 
 <body>
-    <section class="flex flex-col">
-        <form action="http://www.gicfmily.org" target="_blank">
-            <label for="name" class="name"> Name</label> <br>
-            <input type="text" name="name" placeholder="Enter your name" id="name">
-            <div>
-                <label for="email" class="email"> Email</label> <br>
-                <input type="email" name="email" placeholder="Enter your email" id="email">
+    <section class="flex">
+        <form action="http://www.gicfmily.org" target="_blank" class="flex flex-item">
+            <div class="form-group name">
+                <label for="name"> Name</label>
+                <input type="text" name="name" placeholder="Enter your name" id="name">
             </div>
-            <div id="phone">
-                <label for="number" class="phone">Phone Number</label> <br>
-                <input type="number" name="number" placeholder="Enter your Phone Number" id="number">
-            </div> <br>
+            <div class="form-group-wrap">
+                <div class="form-group email">
+                    <label for="email"> Email</label>
+                    <input type="email" name="email" placeholder="Enter your email" id="email">
+                </div>
+                <div class="form-group phone">
+                    <label for="phone">Phone Number</label>
+                    <input type="number" name="number" placeholder="Enter your Phone Number" id="phone">
+                </div>
+            </div>
 
-            <label for="request" class="request"> Prayer Request</label> <br>
-            <textarea name="" id="request" cols="30" rows="10"> c</textarea>
-
-
-            <img src="./image/download.jpg" alt="">
-
+            <div class="form-group request">
+                <label for="request" class="request"> Prayer Request</label>
+                <textarea name="" id="request" cols="30" rows="10"> </textarea>
+            </div>
         </form>
+        <img src="./image/unsplash_zAxxL1KpEzs.png" alt="" class="flex-item">
     </section>
 
 </body>
